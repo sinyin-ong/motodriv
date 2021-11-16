@@ -2151,9 +2151,9 @@ div[data-dimension] {
   margin: 35px 0px 50px 0px;
 }
 
-/*------------------------------------*/
-/*     DASHBOARD     */
-/*------------------------------------*/
+/*------------------------------------------*/
+/*     DASHBOARD (Admin, Tutor, Student)    */
+/*------------------------------------------*/
 
 .cover-photo.dashboard {
   background-image: url("/img/jpg-png/gradient-triangle-bg.jpg");
@@ -2167,6 +2167,13 @@ div[data-dimension] {
   margin-top: 100px;
 }
 
+.dashboard .action-box-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .dashboard .action-box {
   display: flex;
   flex-direction: column;
@@ -2176,9 +2183,10 @@ div[data-dimension] {
   height: 210px;
   background-color: #023e8a;
   border-radius: 10px;
+  margin: 15px;
 }
 
-.dashboard .action-box-wrapper {
+.dashboard .action-box-info {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2186,11 +2194,11 @@ div[data-dimension] {
   align-items: center;
 }
 
-.dashboard .action-box-wrapper > img {
-  width: 75px;
+.dashboard .action-box-info > img {
+  width: 65px;
 }
 
 .dashboard .action-label {
   color: white;
-  margin-top: 10px;
+  margin-top: 20px;
 }
