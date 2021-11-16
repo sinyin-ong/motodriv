@@ -2121,7 +2121,8 @@ div[data-dimension] {
 }
 
 .username-wrapper,
-.password-wrapper {
+.password-wrapper,
+.confirm-password-wrapper {
   width: 100%;
   margin: 15px 0px;
 }
