@@ -2239,7 +2239,7 @@ div[data-dimension] {
 
 /* Table */
 
-.container {
+.container-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2303,4 +2303,17 @@ tr:nth-child(even) {
   padding: 10px 25px;
   font-size: 14px;
   font-family: "Valera", sans-serif;
+}
+
+/* Tutor Class Schedule */
+
+.flexstart-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.flexstart-title-wrapper > h3 {
+  font-size: 20px;
+  padding: 10px;
 }
