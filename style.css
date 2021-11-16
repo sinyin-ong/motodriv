@@ -2024,9 +2024,9 @@ div[data-dimension] {
 @media (max-width: 320px) {
 }
 
-/*--------------------*/
-/*     LOGIN PAGE     */
-/*--------------------*/
+/*------------------------------------*/
+/*     LOGIN PAGE & REGISTER PAGE     */
+/*------------------------------------*/
 
 .cover-photo {
   background-position: top;
@@ -2149,4 +2149,48 @@ div[data-dimension] {
   padding: 15px;
   color: white;
   margin: 35px 0px 50px 0px;
+}
+
+/*------------------------------------*/
+/*     DASHBOARD     */
+/*------------------------------------*/
+
+.cover-photo.dashboard {
+  background-image: url("/img/jpg-png/gradient-triangle-bg.jpg");
+  height: 100%;
+  font-family: "Valera", sans-serif;
+}
+
+.page-title {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.dashboard .action-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 210px;
+  background-color: #023e8a;
+  border-radius: 10px;
+}
+
+.dashboard .action-box-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard .action-box-wrapper > img {
+  width: 75px;
+}
+
+.dashboard .action-label {
+  color: white;
+  margin-top: 10px;
 }
