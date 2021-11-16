@@ -61,17 +61,50 @@
       type="text/css"
     />
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         $("#header").load("/components/homeheader.html");
       });
-    </script>
+    </script> -->
   </head>
 
-  <body>
-    <div id="header"></div>
+  <body class="cover-photo login flex flex-col justify-center items-center">
+    <!-- <div id="header"></div> -->
     <!-- <include src="/components/homeheader.html"></include> -->
-    content
+
+    <div class="login-wrapper flex flex-col justify-center items-center">
+      <div class="login-tab">
+        <div class="tab-wrapper active">
+          <a href="#" class="active">Login</a>
+        </div>
+        <div class="tab-wrapper">
+          <a href="#">Register</a>
+        </div>
+      </div>
+      <div class="login-input-wrapper">
+        <div class="login-input-box">
+          <div class="login-roles-option">
+            <div class="roles-option-button active">
+              <a href="#" class="active">Student</a>
+            </div>
+            <div class="roles-option-button"><a href="#">Tutor</a></div>
+            <div class="roles-option-button"><a href="#">Admin</a></div>
+          </div>
+
+          <div class="username-wrapper">
+            <label class="field-label" for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" />
+          </div>
+
+          <div class="password-wrapper">
+            <label class="field-label" for="password">Password</label>
+            <input type="password" id="username" placeholder="Enter password" />
+          </div>
+
+          <button class="submit-button" type="button">SUBMIT</button>
+        </div>
+      </div>
+    </div>
 
     <!-- Javascript Files
     ================================================== -->

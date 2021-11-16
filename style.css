@@ -2023,3 +2023,129 @@ div[data-dimension] {
 
 @media (max-width: 320px) {
 }
+
+/*--------------------*/
+/*     LOGIN PAGE     */
+/*--------------------*/
+
+.cover-photo {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  width: 100%;
+  z-index: -2;
+}
+
+.cover-photo.login {
+  background-image: url("/img/jpg-png/login-bg.png");
+  height: 100%;
+  font-family: "Valera", sans-serif;
+}
+
+.login-wrapper {
+  position: absolute;
+  width: 420px;
+  height: 500px;
+  z-index: -1;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.login-tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.login-tab .tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 45px;
+  font-size: 15px;
+  border-radius: 3px 3px 0px 0px;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
+.login-tab .tab-wrapper.active {
+  background-color: #f6f6f6;
+}
+
+.login-input-wrapper {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-input-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  margin: auto;
+}
+
+.login-roles-option {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 45px;
+  margin: 50px 0px 30px 0px;
+}
+
+.login-roles-option a {
+  color: black;
+}
+
+.login-roles-option .active {
+  color: white;
+  background-color: #78adc9;
+}
+
+.roles-option-button {
+  border: 1px solid #f6f6f6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.username-wrapper,
+.password-wrapper {
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.login-wrapper .field-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: "Valera", sans-serif;
+}
+
+.login-wrapper input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 12px;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+}
+
+.login-wrapper .submit-button {
+  background-color: #78adc9;
+  width: 120px;
+  border: none;
+  padding: 15px;
+  color: white;
+  margin: 35px 0px 50px 0px;
+}
