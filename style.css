@@ -2202,3 +2202,105 @@ div[data-dimension] {
   color: white;
   margin-top: 20px;
 }
+
+/*-----------------------------------------------*/
+/*     CLASS SCHEDULE (Admin, Tutor, Student)    */
+/*------------------------------------------------*/
+
+.class-schedule .selection-wrapper {
+  font-family: "Valera", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 30px 0;
+}
+
+.class-schedule .selection-wrapper > label {
+  padding-top: 5px;
+}
+
+.class-schedule .selection-wrapper > select {
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.class-schedule .search-button {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 6px 25px;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+/* Table */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.maxwidth-table-container {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 16px 40px rgba(133, 133, 133, 0.25);
+  margin-bottom: 35px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1000px;
+  margin: 25px 0;
+}
+
+th {
+  text-align: center;
+  height: 40px;
+  border-bottom: 1px solid #0a0a0a;
+  font-family: "Valera", sans-serif;
+  font-size: 15px;
+}
+
+td {
+  text-align: center;
+  height: 35px;
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f6f6;
+}
+
+.flexend-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.add-schedule-button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  font-family: "Valera", sans-serif;
+}
