@@ -2317,3 +2317,30 @@ tr:nth-child(even) {
   font-size: 20px;
   padding: 10px;
 }
+
+/* Student Class Schedule */
+
+.class-schedule .delete-button {
+  background-color: #838383;
+  color: white;
+  border: none;
+  padding: 3px 20px;
+  font-size: 13px;
+  font-family: "Valera", sans-serif;
+}
+
+.class-schedule .add-button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 3px 20px;
+  font-size: 13px;
+  font-family: "Valera", sans-serif;
+}
+
+.class-schedule .reminder-text {
+  margin-bottom: 25px;
+  font-family: "Valera", sans-serif;
+  font-size: 15px;
+  color: #878787;
+}
