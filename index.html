@@ -80,14 +80,15 @@
     <!-- END SCROLL TOP BUTTON -->
 
     <!--=========== BEGIN HEADER SECTION ================-->
-    <header id="header">
-      <!-- BEGIN MENU -->
-      <div class="menu_area">
+    <div id="header"></div>
+    <!-- <header id="header"> -->
+    <!-- BEGIN MENU -->
+    <!-- <div class="menu_area">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
           <div class="container">
-            <div class="navbar-header">
-              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-              <button
+            <div class="navbar-header"> -->
+    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+    <!-- <button
                 type="button"
                 class="navbar-toggle collapsed"
                 data-toggle="collapse"
@@ -99,14 +100,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
-              <!-- LOGO -->
-              <!-- TEXT BASED LOGO -->
-              <!-- <a class="navbar-brand" href="index.html"
+              </button> -->
+    <!-- LOGO -->
+    <!-- TEXT BASED LOGO -->
+    <!-- <a class="navbar-brand" href="index.html"
                 >WpF <span>Degree</span></a
               > -->
-              <!-- IMG BASED LOGO  -->
-              <a class="navbar-brand" href="index.html"
+    <!-- IMG BASED LOGO  -->
+    <!-- <a class="navbar-brand" href="index.html"
                 ><img src="img/jpg-png/motodriv-logo.png" alt="logo" /><span
                   >MOTODRIV</span
                 ></a
@@ -137,13 +138,13 @@
                 </li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-            </div>
-            <!--/.nav-collapse -->
-          </div>
+            </div> -->
+    <!--/.nav-collapse -->
+    <!-- </div>
         </nav>
-      </div>
-      <!-- END MENU -->
-    </header>
+      </div> -->
+    <!-- END MENU -->
+    <!-- </header> -->
     <!--=========== END HEADER SECTION ================-->
 
     <!--=========== BEGIN SLIDER SECTION ================-->
@@ -1270,6 +1271,12 @@
       language="javascript"
       src="js/jquery.tosrus.min.all.js"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/components/homeheader.html");
+      });
+    </script>
 
     <!-- Custom js-->
     <script src="js/custom.js"></script>

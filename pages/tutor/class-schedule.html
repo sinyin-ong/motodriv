@@ -70,6 +70,7 @@
   <body
     class="cover-photo class-schedule flex flex-col justify-center items-center"
   >
+    <div id="header"></div>
     <h2 class="page-title">MY CLASS SCHEDULE</h2>
 
     <!-- <div class="selection-wrapper">
@@ -291,6 +292,12 @@
       language="javascript"
       src="/js/jquery.tosrus.min.all.js"
     ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#header").load("/components/rolesheader.html");
+      });
+    </script>
 
     <!-- Custom js-->
     <script src="/js/custom.js"></script>
