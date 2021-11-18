@@ -77,56 +77,102 @@
         items-center
       "
     >
-      <div class="maxwidth-profile-container">
-        <div class="profile-container">
-          <div class="profile-icon-wrapper">
-            <img class="profile-icon" src="/img/svg/profileIcon.svg" />
-          </div>
-          <div class="edit-profile-icon-wrapper">
-            <img class="edit-profile-icon" src="/img/jpg-png/editIcon.png" />
-          </div>
+      <div class="maxwidth-profile-box">
+        <div class="maxwidth-profile-container">
+          <div class="profile-container">
+            <div class="profile-icon-wrapper">
+              <img class="profile-icon" src="/img/svg/profileIcon.svg" />
+            </div>
+            <div class="edit-profile-icon-wrapper">
+              <img class="edit-profile-icon" src="/img/jpg-png/editIcon.png" />
+            </div>
 
-          <div class="profile-frame">
-            <div class="profile-frame-title">PROFILE</div>
-            <table class="profile-table">
-              <tr>
-                <th>Student ID</th>
-                <th class="profile-detail">20225115621</th>
-              </tr>
-              <tr>
-                <td>Student Username</td>
-                <td class="profile-detail">syinong</td>
-              </tr>
-              <tr>
-                <td>Email Address</td>
-                <td class="profile-detail">syin@gmail.com</td>
-              </tr>
-              <tr>
-                <td>Student Name</td>
-                <td class="profile-detail">Ong Sin Yin</td>
-              </tr>
-              <tr>
-                <td>Date of Birth</td>
-                <td class="profile-detail">08/08/2001</td>
-              </tr>
-              <tr>
-                <td>Gender</td>
-                <td class="profile-detail">Female</td>
-              </tr>
-              <tr>
-                <td>Phone Number</td>
-                <td class="profile-detail">012-1234323</td>
-              </tr>
-              <tr>
-                <td>Date of Enroll</td>
-                <td class="profile-detail">08/08/2021</td>
-              </tr>
-              <tr>
-                <td>Date of Graduation</td>
-                <td class="profile-detail">-</td>
-              </tr>
-            </table>
+            <div class="profile-frame">
+              <div class="profile-frame-title">PROFILE</div>
+              <table class="profile-table">
+                <tr>
+                  <th>Student ID</th>
+                  <th class="profile-detail">20225115621</th>
+                </tr>
+                <tr>
+                  <td>Student Username</td>
+                  <td class="profile-detail">
+                    <input
+                      type="text"
+                      id="stdUsername"
+                      name="stdUsername"
+                      maxlength="10"
+                      value="syinong"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Email Address</td>
+                  <td class="profile-detail">
+                    <input
+                      type="email"
+                      id="stdEmail"
+                      name="stdEmail"
+                      value="syin@gmail.com"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Student Name</td>
+                  <td class="profile-detail">
+                    <input
+                      type="text"
+                      id="stdName"
+                      name="stdName"
+                      value="Ong Sin Yin"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Date of Birth</td>
+                  <td class="profile-detail">
+                    <input
+                      type="date"
+                      id="stdDOB"
+                      name="stdDOB"
+                      value="2001-08-08"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td class="profile-detail">
+                    <select id="stdGender" name="stdGender">
+                      <option value="female">Female</option>
+                      <option value="male">Male</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Phone Number</td>
+                  <td class="profile-detail">
+                    <input
+                      type="tel"
+                      id="stdTel"
+                      name="stdTel"
+                      value="012-1234323"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Date of Enroll</td>
+                  <td class="profile-detail">08/08/2021</td>
+                </tr>
+                <tr>
+                  <td>Date of Graduation</td>
+                  <td class="profile-detail">-</td>
+                </tr>
+              </table>
+            </div>
           </div>
+        </div>
+        <div class="flexend-button-wrapper">
+          <button class="save-button">Save Change</button>
         </div>
       </div>
     </div>
