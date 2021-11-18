@@ -2314,7 +2314,8 @@ div[data-dimension] {
 }
 
 .add-schedule-button,
-.save-button {
+.save-button,
+.submit-profile-button {
   background-color: #0070ff;
   color: white;
   border: none;
@@ -2451,6 +2452,23 @@ div[data-dimension] {
   width: 100%;
 }
 
+.complete-profile-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.complete-profile-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.complete-desc {
+  margin: 20px 0;
+}
+
 .edit-profile-icon-wrapper {
   height: 22%;
 }
@@ -2530,6 +2548,7 @@ div[data-dimension] {
   padding: 2px 8px;
 }
 
-.save-button {
+.save-button,
+.submit-profile-button {
   margin: 20px 0;
 }
