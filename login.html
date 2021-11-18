@@ -132,6 +132,7 @@
               id="submit-btn"
               class="submit-button"
               value="SUBMIT"
+              onclick="successMessage()"
             />
           </form>
         </div>
@@ -159,6 +160,34 @@
           this.className += " active";
         });
       }
+
+      function successMessage() {
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+
+        Toast.fire({
+          icon: "error",
+          title: "Login failed, please try again.",
+        });
+
+        // Toast.fire({
+        //   icon: "success",
+        //   title: "Login successfully",
+        // });
+      }
+
+      // $("#submit-btn").on("submit-btn", function () {
+      //   Swal.fire("Good job!", "You clicked the button!", "success");
+      // });
 
       // Swal.fire({
       //   template: "#my-template",
