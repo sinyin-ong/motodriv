@@ -66,13 +66,13 @@ jQuery(function($){
 	/*  4. SKILL CIRCLE
 	/* ----------------------------------------------------------- */
 
-	$('#myStathalf').circliful();
-	$('#myStat').circliful();
-	$('#myStathalf2').circliful();
-	$('#myStat2').circliful();
-	$('#myStat3').circliful();
-	$('#myStat4').circliful();
-	$('#myStathalf3').circliful();
+	// $('#myStathalf').circliful();
+	// $('#myStat').circliful();
+	// $('#myStathalf2').circliful();
+	// $('#myStat2').circliful();
+	// $('#myStat3').circliful();
+	// $('#myStat4').circliful();
+	// $('#myStathalf3').circliful();
 
 	/* ----------------------------------------------------------- */
 	/*  5. WOW SMOOTH ANIMATIN
@@ -182,16 +182,16 @@ jQuery(function($){
 	/* ----------------------------------------------------------- */
 	/*  9. PRELOADER 
 	/* ----------------------------------------------------------- */
-	  window.addEventListener('DOMContentLoaded', function() {
-        new QueryLoader2(document.querySelector("body"), {
-            barColor: "#efefef",
-            backgroundColor: "#111",
-            percentage: true,
-            barHeight: 1,
-            minimumTime: 200,
-            fadeOutTime: 1000
-        });
-    });
+	  // window.addEventListener('DOMContentLoaded', function() {
+    //     new QueryLoader2(document.querySelector("body"), {
+    //         barColor: "#efefef",
+    //         backgroundColor: "#111",
+    //         percentage: true,
+    //         barHeight: 1,
+    //         minimumTime: 200,
+    //         fadeOutTime: 1000
+    //     });
+    // });
 
 
     /* ----------------------------------------------------------- */
