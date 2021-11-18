@@ -127,7 +127,7 @@
         </div>
       </div>
       <div class="flexend-button-wrapper">
-        <button class="save-button" onclick="completeProfile();">Save Changes</button>
+        <button class="save-button" onclick="editProfile();">Save Changes</button>
       </div>
     </div>
   </div>
@@ -193,7 +193,7 @@
       }
     }
 
-    function completeProfile() {
+    function editProfile() {
       let studUsername = JSON.parse(getCookie('user')).studUsername;
       let myHeaders = new Headers();
       myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
