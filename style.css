@@ -2283,13 +2283,13 @@ div[data-dimension] {
   margin-bottom: 35px;
 }
 
-table {
+.schedule-table {
   border-collapse: collapse;
   width: 1000px;
   margin: 25px 0;
 }
 
-th {
+.schedule-table th {
   text-align: center;
   height: 40px;
   border-bottom: 1px solid #0a0a0a;
@@ -2297,13 +2297,13 @@ th {
   font-size: 15px;
 }
 
-td {
+.schedule-table td {
   text-align: center;
   height: 35px;
   font-size: 14px;
 }
 
-tr:nth-child(even) {
+.schedule-table tr:nth-child(even) {
   background-color: #f6f6f6;
 }
 
@@ -2360,4 +2360,107 @@ tr:nth-child(even) {
   font-family: "Valera", sans-serif;
   font-size: 15px;
   color: #878787;
+}
+
+/*-----------------------------------------------*/
+/*     PROFILE (Student, Tutor)    */
+/*------------------------------------------------*/
+
+.cover-photo.profile {
+  background-image: url("/img/jpg-png/gradient-triangle-bg.jpg");
+  height: 100%;
+  font-family: "Valera", sans-serif;
+  z-index: -1;
+}
+
+.profile .profile-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.maxwidth-profile-container {
+  width: 480px;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 16px 40px rgba(133, 133, 133, 0.25);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.profile-container {
+  width: 80%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  margin-top: 40px;
+}
+
+.edit-profile-icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 22%;
+}
+
+.edit-profile-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.profile-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 78%;
+  border: 1px solid #caf0f8;
+  border-radius: 5px;
+}
+
+.profile-frame-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #caf0f8;
+  height: 35px;
+}
+
+.profile-table {
+  width: 80%;
+  height: 80%;
+  margin-top: 20px;
+}
+
+.profile-table th {
+  font-weight: 500;
+}
+
+.profile-detail {
+  color: #00a6ff;
 }
