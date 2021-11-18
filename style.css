@@ -2241,6 +2241,19 @@ div[data-dimension] {
   font-size: 14px;
 }
 
+.course-name-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.course-name-wrapper > h6 {
+  color: #0077b6;
+  font-size: 15px;
+  font-family: "Valera", sans-serif;
+}
+
 /* Table */
 
 .container-wrapper {
