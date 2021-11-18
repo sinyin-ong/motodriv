@@ -2390,9 +2390,9 @@ div[data-dimension] {
   justify-content: center;
   align-items: center;
 }
-.maxwidth-profile-container {
+.maxwidth-profile-container,
+.maxwidth-tutor-profile-container {
   width: 100%;
-  height: 580px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2404,13 +2404,29 @@ div[data-dimension] {
   margin-top: 10px;
 }
 
-.profile-container {
+.maxwidth-profile-container {
+  height: 580px;
+}
+
+.maxwidth-tutor-profile-container {
+  height: 450px;
+}
+
+.profile-container,
+.tutor-profile-container {
   width: 80%;
-  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.profile-container {
+  height: 85%;
+}
+
+.tutor-profile-container {
+  height: 80%;
 }
 
 .profile-icon-wrapper {
@@ -2427,12 +2443,20 @@ div[data-dimension] {
   margin-top: 40px;
 }
 
-.edit-profile-icon-wrapper {
+.edit-profile-icon-wrapper,
+.tutor-edit-profile-icon-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   width: 100%;
+}
+
+.edit-profile-icon-wrapper {
   height: 22%;
+}
+
+.tutor-edit-profile-icon-wrapper {
+  height: 30%;
 }
 
 .edit-profile-icon {
@@ -2440,15 +2464,23 @@ div[data-dimension] {
   height: 30px;
 }
 
-.profile-frame {
+.profile-frame,
+.tutor-profile-frame {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  height: 78%;
   border: 1px solid #caf0f8;
   border-radius: 5px;
+}
+
+.profile-frame {
+  height: 78%;
+}
+
+.tutor-profile-frame {
+  height: 70%;
 }
 
 .profile-frame-title {
@@ -2461,18 +2493,29 @@ div[data-dimension] {
   height: 35px;
 }
 
-.profile-table {
+.profile-table,
+.tutor-profile-table {
   width: 80%;
   height: 80%;
+}
+
+.profile-table {
   margin-top: 20px;
 }
 
-.profile-table th {
+.tutor-profile-table {
+  margin-top: 8px;
+}
+
+.profile-table th,
+.tutor-profile-table th {
   font-weight: 500;
 }
 
 .profile-table th,
-.profile-table td {
+.tutor-profile-table th,
+.profile-table td,
+.tutor-profile-table td {
   width: 50%;
   height: 35px;
 }
