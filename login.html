@@ -61,6 +61,9 @@
       type="text/css"
     />
 
+    <!-- Sweet Alert-->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
+
     <!-- <script>
       $(document).ready(function () {
         $("#header").load("/components/homeheader.html");
@@ -74,8 +77,8 @@
 
     <div class="login-wrapper flex flex-col justify-center items-center">
       <div class="login-tab">
-        <div class="tab-wrapper active">
-          <a href="#" class="active">Login</a>
+        <div class="tab-wrapper act">
+          <a href="#" class="act">Login</a>
         </div>
         <div class="tab-wrapper">
           <a href="/register.html">Register</a>
@@ -83,28 +86,84 @@
       </div>
       <div class="login-input-wrapper">
         <div class="login-input-box">
-          <div class="login-roles-option">
-            <div class="roles-option-button active">
-              <a href="#" class="active">Student</a>
+          <div id="login-roles-option">
+            <button
+              class="roles-option-button active"
+              name="roles"
+              value="student"
+            >
+              Student
+            </button>
+            <button class="roles-option-button" name="roles" value="tutor">
+              Tutor
+            </button>
+            <button class="roles-option-button" name="roles" value="admin">
+              Admin
+            </button>
+          </div>
+
+          <form>
+            <div class="username-wrapper">
+              <label class="field-label" for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter username"
+                maxlength="10"
+                required
+              />
             </div>
-            <div class="roles-option-button"><a href="#">Tutor</a></div>
-            <div class="roles-option-button"><a href="#">Admin</a></div>
-          </div>
 
-          <div class="username-wrapper">
-            <label class="field-label" for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter username" />
-          </div>
+            <div class="password-wrapper">
+              <label class="field-label" for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password"
+                maxlength="15"
+                required
+              />
+            </div>
 
-          <div class="password-wrapper">
-            <label class="field-label" for="password">Password</label>
-            <input type="password" id="username" placeholder="Enter password" />
-          </div>
-
-          <button class="submit-button" type="button">SUBMIT</button>
+            <input
+              type="submit"
+              id="submit-btn"
+              class="submit-button"
+              value="SUBMIT"
+            />
+          </form>
         </div>
       </div>
     </div>
+
+    <!-- <template id="my-template">
+      <swal-title> Save changes to "Untitled 1" before closing? </swal-title>
+      <swal-icon type="warning" color="red"></swal-icon>
+      <swal-button type="confirm"> Save As </swal-button>
+      <swal-button type="cancel"> Cancel </swal-button>
+      <swal-button type="deny"> Close without Saving </swal-button>
+      <swal-param name="allowEscapeKey" value="false" />
+      <swal-param name="customClass" value='{ "popup": "my-popup" }' />
+    </template> -->
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("login-roles-option");
+      var btns = header.getElementsByClassName("roles-option-button");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      // Swal.fire({
+      //   template: "#my-template",
+      // });
+    </script>
 
     <!-- Javascript Files
     ================================================== -->
@@ -138,6 +197,11 @@
 
     <!-- Custom js-->
     <script src="/js/custom.js"></script>
+
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
     <!--=============================================== 
     Template Design By WpFreeware Team.
     Author URI : http://www.wpfreeware.com/

@@ -77,44 +77,79 @@
         <div class="tab-wrapper">
           <a href="/login.html">Login</a>
         </div>
-        <div class="tab-wrapper active">
-          <a href="#" class="active">Register</a>
+        <div class="tab-wrapper act">
+          <a href="#" class="act">Register</a>
         </div>
       </div>
       <div class="login-input-wrapper">
         <div class="login-input-box">
-          <div class="login-roles-option">
-            <div class="roles-option-button active">
-              <a href="#" class="active">Student</a>
-            </div>
-            <div class="roles-option-button"><a href="#">Tutor</a></div>
-          </div>
-
-          <div class="username-wrapper">
-            <label class="field-label" for="username">Username</label>
-            <input type="text" id="username" placeholder="Enter username" />
-          </div>
-
-          <div class="password-wrapper">
-            <label class="field-label" for="password">Password</label>
-            <input type="password" id="username" placeholder="Enter password" />
-          </div>
-
-          <div class="confirm-password-wrapper">
-            <label class="field-label" for="password"
-              >Confirmation password</label
+          <div id="login-roles-option">
+            <button
+              class="roles-option-button active"
+              name="roles"
+              value="student"
             >
-            <input
-              type="password"
-              id="username"
-              placeholder="Enter confirmation password"
-            />
+              Student
+            </button>
+            <button class="roles-option-button" name="roles" value="tutor">
+              Tutor
+            </button>
           </div>
 
-          <button class="submit-button" type="button">SUBMIT</button>
+          <form>
+            <div class="username-wrapper">
+              <label class="field-label" for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                maxlength="10"
+                required
+              />
+            </div>
+
+            <div class="password-wrapper">
+              <label class="field-label" for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                maxlength="15"
+                required
+              />
+            </div>
+
+            <div class="confirm-password-wrapper">
+              <label class="field-label" for="password"
+                >Confirmation password</label
+              >
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter confirmation password"
+                maxlength="15"
+                required
+              />
+            </div>
+
+            <input type="submit" class="submit-button" value="SUBMIT" />
+          </form>
         </div>
       </div>
     </div>
+
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("login-roles-option");
+      var btns = header.getElementsByClassName("roles-option-button");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
 
     <!-- Javascript Files
     ================================================== -->

@@ -2073,7 +2073,7 @@ div[data-dimension] {
   background-color: rgba(196, 196, 196, 0.5);
 }
 
-.login-tab .tab-wrapper.active {
+.login-tab .tab-wrapper.act {
   background-color: #f6f6f6;
 }
 
@@ -2094,7 +2094,7 @@ div[data-dimension] {
   margin: auto;
 }
 
-.login-roles-option {
+#login-roles-option {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -2102,22 +2102,16 @@ div[data-dimension] {
   margin: 50px 0px 30px 0px;
 }
 
-.login-roles-option a {
-  color: black;
-}
-
-.login-roles-option .active {
-  color: white;
-  background-color: #78adc9;
-}
-
 .roles-option-button {
   border: 1px solid #f6f6f6;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: white;
+}
+
+.roles-option-button.active,
+.roles-option-button:hover {
+  color: white;
+  background-color: #78adc9;
 }
 
 .username-wrapper,
@@ -2149,6 +2143,16 @@ div[data-dimension] {
   padding: 15px;
   color: white;
   margin: 35px 0px 50px 0px;
+  border-radius: 0;
+  font-family: "Valera", sans-serif;
+  font-size: 14px;
+}
+
+.login-input-box > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*------------------------------------------*/
