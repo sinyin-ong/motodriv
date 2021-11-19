@@ -223,14 +223,12 @@
             if (response.ok) {
               return response.json();
             } else {
-              console.log(response);
               document.getElementById("submit-btn").value = "SUBMIT";
               failedMessage();
               return;
             }
           })
           .then((result) => {
-            console.log(result)
             try {
               if (result.status === false) {
                 document.getElementById("submit-btn").value = "SUBMIT";

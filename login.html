@@ -254,11 +254,9 @@
             }
           })
           .then(result => {
-            console.log(result)
             document.cookie = "user=" + JSON.stringify(result.user) + "; path=/";
-            console.log(document.cookie)
             document.getElementById("submit-btn").value = 'SUBMIT';
-            // window.location.href = "/pages/student/dashboard.html";
+            window.location.href = "/pages/student/dashboard.html";
           })
           .catch(error => {
             failedMessage();
