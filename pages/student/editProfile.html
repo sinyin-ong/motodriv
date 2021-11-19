@@ -221,6 +221,7 @@
         .then(result => {
           if (result.status) {
             document.cookie = `user=${JSON.stringify(result.user)}` + "; path=/";
+            window.location.href = "./dashboard.html";
           } else {
             console.log('something went wrong')
           }
