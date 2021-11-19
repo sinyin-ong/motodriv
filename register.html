@@ -86,7 +86,8 @@
 
         <div class="confirm-password-wrapper">
           <label class="field-label" for="password">Confirmation password</label>
-          <input type="password" id="password" placeholder="Enter confirmation password" maxlength="15" required />
+          <input type="password" id="confirm_password" placeholder="Enter confirmation password" maxlength="15"
+            required />
         </div>
 
         <input type="submit" class="submit-button" id="submit-btn" value="SUBMIT" onclick="signup()" />
@@ -94,10 +95,19 @@
     </div>
   </div>
 
+  <!-- initialize jQuery Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
 
     document.cookie = "user=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
 
+    $('#password, #confirm_password').on('keyup', function () {
+      console.log('hai')
+      if ($('#password').val() == $('#confirm_password').val()) {
+        $('#submit-btn').attr('disabled', false);
+      } else
+        $('#submit-btn').attr('disabled', true);
+    });
 
     // Add active class to the current button (highlight it)
     var header = document.getElementById("login-roles-option");
