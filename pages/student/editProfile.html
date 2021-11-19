@@ -116,7 +116,7 @@
               </tr>
               <tr>
                 <td>Date of Enroll</td>
-                <td class="profile-detail">08/08/2021</td>
+                <td class="profile-detail" id="dateOfEnrol">08/08/2021</td>
               </tr>
               <tr>
                 <td>Date of Graduation</td>
@@ -190,6 +190,9 @@
       }
       if (user.phoneNum) {
         document.getElementById('stdTel').value = user.phoneNum;
+      }
+      if (user.createdAt) {
+        document.getElementById('dateOfEnrol').innerHTML = new Date(user.createdAt).toLocaleDateString('en-CA');
       }
     }
 
