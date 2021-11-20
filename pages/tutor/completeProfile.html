@@ -157,6 +157,9 @@
     function populateFieldFromCookie() {
       let user = JSON.parse(getCookie('user'));
       console.log(user)
+      if (user.tutorId) {
+        document.getElementById('tutId').innerHTML = user.tutorId;
+      }
       if (user.tutorUsername) {
         document.getElementById('tutUsername').value = user.tutorUsername;
       }

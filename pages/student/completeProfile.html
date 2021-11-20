@@ -75,7 +75,7 @@
             <table class="profile-table">
               <tr>
                 <th>Student ID</th>
-                <th class="profile-detail">20225115621</th>
+                <th class="profile-detail" id="stdId"></th>
               </tr>
               <tr>
                 <td>Student Username</td>
@@ -175,6 +175,9 @@
 
     function populateFieldFromCookie() {
       let user = JSON.parse(getCookie('user'));
+      if (user.studentId) {
+        document.getElementById('stdId').value = user.studentId;
+      }
       if (user.studUsername) {
         document.getElementById('stdUsername').value = user.studUsername;
       }
