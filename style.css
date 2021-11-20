@@ -2320,16 +2320,34 @@ div[data-dimension] {
   align-self: flex-end;
 }
 
+.center-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15%;
+  margin-bottom: 30px;
+}
+
 .add-schedule-button,
 .save-button,
-.submit-profile-button {
-  background-color: #0070ff;
+.submit-profile-button,
+.submit-payment-button {
   color: white;
   border: none;
   padding: 10px 25px;
   font-size: 14px;
   font-family: "Valera", sans-serif;
   border-radius: 5px;
+}
+
+.add-schedule-button,
+.save-button,
+.submit-profile-button {
+  background-color: #0070ff;
+}
+
+.submit-payment-button {
+  background-color: #023e8a;
 }
 
 .add-schedule-button {
@@ -2451,11 +2469,16 @@ div[data-dimension] {
   height: 100%;
 }
 
-.profile-icon-wrapper {
+.profile-icon-wrapper,
+.payment-icon-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.payment-icon-wrapper {
+  height: 40%;
 }
 
 .profile-icon {
@@ -2505,7 +2528,8 @@ div[data-dimension] {
 
 .profile-frame,
 .tutor-profile-frame,
-.license-profile-frame {
+.license-profile-frame,
+.payment-profile-frame {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -2519,6 +2543,11 @@ div[data-dimension] {
   border: 1px solid #caf0f8;
 }
 
+.payment-profile-frame {
+  border: 1px solid #023e8a;
+  height: 50%;
+}
+
 .profile-frame {
   height: 78%;
 }
@@ -2528,7 +2557,8 @@ div[data-dimension] {
 }
 
 .profile-frame-title,
-.license-frame-title {
+.license-frame-title,
+.payment-frame-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2548,11 +2578,27 @@ div[data-dimension] {
   border-radius: 10px 10px 0 0;
   margin-bottom: 5px;
 }
+.payment-frame-title {
+  color: white;
+  background-color: #023e8a;
+  height: 35px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 12px;
+}
+
+.profile-table,
+.tutor-profile-table,
+.payment-profile-table {
+  width: 80%;
+}
 
 .profile-table,
 .tutor-profile-table {
-  width: 80%;
   height: 80%;
+}
+
+.payment-profile-table {
+  height: 65%;
 }
 
 .profile-table {
@@ -2564,14 +2610,17 @@ div[data-dimension] {
 }
 
 .profile-table th,
-.tutor-profile-table th {
+.tutor-profile-table th,
+.payment-profile-table th {
   font-weight: 500;
 }
 
 .profile-table th,
 .tutor-profile-table th,
+.payment-profile-table th,
 .profile-table td,
-.tutor-profile-table td {
+.tutor-profile-table td,
+.payment-profile-table td {
   width: 50%;
   height: 35px;
 }
@@ -2584,6 +2633,7 @@ div[data-dimension] {
 .profile-detail > select {
   width: 150px;
   padding: 2px 8px;
+  border-radius: 5px;
 }
 
 .save-button,
@@ -2602,4 +2652,16 @@ div[data-dimension] {
 
 .table-container.attendance {
   background-color: white;
+}
+
+/*-----------------------------------------------*/
+/*      PAYMENT (Student, Admin)     */
+/*------------------------------------------------*/
+
+.due-balance-label {
+  font-size: 18px;
+}
+
+.due-balance {
+  font-size: 22px;
 }

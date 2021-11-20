@@ -5,7 +5,7 @@
     ================================================== -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Motodriv | Student Dashboard</title>
+    <title>Motodriv | Payment</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -61,78 +61,77 @@
       type="text/css"
     />
 
-    <!-- <script>
-      $(document).ready(function () {
-        $("#header").load("/components/homeheader.html");
-      });
-    </script> -->
+    <!-- Sweet Alert-->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
   </head>
-
-  <body class="cover-photo dashboard flex flex-col justify-center items-center">
+  <body class="cover-photo profile flex flex-col justify-center items-center">
     <div id="header"></div>
     <!-- <include src="/components/homeheader.html"></include> -->
-    <h2 class="page-title">STUDENT DASHBOARD</h2>
+    <h2 class="page-title">PAYMENT</h2>
 
-    <div class="dashboard-wrapper flex flex-col justify-center items-center">
-      <div class="action-box-wrapper">
-        <a href="/pages/student/class-schedule.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/class-schedule.svg" />
-              <div class="action-label">My Class Schedule</div>
+    <div
+      class="
+        profile-container-wrapper
+        flex flex-col
+        justify-center
+        items-center
+      "
+    >
+      <div class="maxwidth-profile-box">
+        <div class="maxwidth-tutor-profile-container">
+          <div class="tutor-profile-container">
+            <div class="payment-icon-wrapper">
+              <h6 class="due-balance-label">Your due balance:</h6>
+              <h6 class="due-balance">RM100</h6>
             </div>
-          </div></a
-        >
 
-        <a href="/pages/student/profile.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/profile.svg" />
-              <div class="action-label">My Profile</div>
+            <div class="payment-profile-frame">
+              <div class="payment-frame-title">PAYMENT DETAILS</div>
+              <table class="payment-profile-table">
+                <tr>
+                  <th>Card Number</th>
+                  <th class="profile-detail">
+                    <input
+                      type="text"
+                      id="cardNum"
+                      name="cardNum"
+                      placeholder="xxxx xxxx xxxx xxxx"
+                    />
+                  </th>
+                </tr>
+                <tr>
+                  <td>Expiry Date</td>
+                  <td class="profile-detail">
+                    <input
+                      type="text"
+                      id="expiryDate"
+                      name="expiryDate"
+                      placeholder="MM/YY"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>CVV</td>
+                  <td class="profile-detail">
+                    <input
+                      type="password"
+                      id="cvv"
+                      name="cvv"
+                      placeholder="xxx"
+                    />
+                  </td>
+                </tr>
+              </table>
             </div>
-          </div></a
-        >
-
-        <a href="/pages/student/payment.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/payment.svg" />
-              <div class="action-label">Make Payment</div>
-            </div>
-          </div></a
-        >
-      </div>
-
-      <div class="action-box-wrapper">
-        <a href="/pages/student/class-schedule.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/change-class-time.svg" />
-              <div class="action-label">Change Class Time</div>
-            </div>
-          </div></a
-        >
-
-        <a href="/pages/student/training-history.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/training-history.svg" />
-              <div class="action-label">My Training History</div>
-            </div>
-          </div></a
-        >
-
-        <a href="/pages/student/attendance.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/attendance.svg" />
-              <div class="action-label">Student Report</div>
-            </div>
-          </div></a
-        >
+          </div>
+          <div class="center-button-wrapper">
+            <button class="submit-payment-button" onclick="editProfile();">
+              Submit Payment
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-
     <!-- Javascript Files
     ================================================== -->
 
@@ -171,6 +170,11 @@
 
     <!-- Custom js-->
     <script src="/js/custom.js"></script>
+
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
     <!--=============================================== 
     Template Design By WpFreeware Team.
     Author URI : http://www.wpfreeware.com/
