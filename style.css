@@ -2244,14 +2244,21 @@ div[data-dimension] {
 .course-name-wrapper {
   display: flex;
   flex-direction: row;
-  align-self: flex-start;
+  justify-content: space-between;
   margin-bottom: 20px;
+  width: 100%;
 }
 
+.course-name-wrapper .left-side > h6,
+.course-name-wrapper .right-side > h6,
 .course-name-wrapper > h6 {
   color: #0077b6;
   font-size: 15px;
   font-family: "Valera", sans-serif;
+}
+
+.right-side {
+  text-align: right;
 }
 
 /* Table */
@@ -2323,6 +2330,10 @@ div[data-dimension] {
   font-size: 14px;
   font-family: "Valera", sans-serif;
   border-radius: 5px;
+}
+
+.add-schedule-button {
+  margin-bottom: 30px;
 }
 
 /* Tutor Class Schedule */

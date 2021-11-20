@@ -5,7 +5,7 @@
     ================================================== -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Motodriv | Tutor Dashboard</title>
+    <title>Motodriv | Student - Training History</title>
 
     <!-- Mobile Specific Metas
     ================================================== -->
@@ -67,51 +67,89 @@
       });
     </script> -->
   </head>
-
-  <body class="cover-photo dashboard flex flex-col justify-center items-center">
+  <body
+    class="cover-photo class-schedule flex flex-col justify-center items-center"
+  >
     <div id="header"></div>
-    <!-- <include src="/components/homeheader.html"></include> -->
-    <h2 class="page-title">TUTOR DASHBOARD</h2>
+    <h2 class="page-title">TRAINING HISTORY</h2>
 
-    <div class="dashboard-wrapper flex flex-col justify-center items-center">
-      <div class="action-box-wrapper">
-        <a href="/pages/tutor/class-schedule.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/class-schedule.svg" />
-              <div class="action-label">My Class Schedule</div>
-            </div>
-          </div></a
-        >
+    <!-- <div class="selection-wrapper">
+      <label for="course">Choose course: </label>
+      <select name="course" id="course">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <button class="search-button" type="button">Search</button>
+    </div> -->
 
-        <a href="/pages/tutor/profile.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/profile.svg" />
-              <div class="action-label">My Profile</div>
-            </div>
-          </div></a
-        >
-      </div>
+    <div class="container-wrapper">
+      <div class="maxwidth-table-container">
+        <div class="flexstart-title-wrapper">
+          <h3>Theory Class</h3>
+        </div>
+        <div class="table-container">
+          <table class="schedule-table">
+            <tr>
+              <th>No</th>
+              <th>Course Name</th>
+              <th>Class Date</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>B (Motor Cycles Above 500cc)</td>
+              <td>11-11-2021</td>
+              <td>10:00:00</td>
+              <td>12:00:00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>B (Motor Cycles Above 500cc)</td>
+              <td>12-11-2021</td>
+              <td>10:00:00</td>
+              <td>12:00:00</td>
+            </tr>
+          </table>
+        </div>
 
-      <div class="action-box-wrapper">
-        <a href="/pages/tutor/training-history.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/training-history.svg" />
-              <div class="action-label">My Training History</div>
-            </div>
-          </div></a
-        >
-
-        <a href="/pages/tutor/attendance.html"
-          ><div class="action-box">
-            <div class="action-box-info">
-              <img src="/img/svg/attendance.svg" />
-              <div class="action-label">Student Attendance</div>
-            </div>
-          </div></a
-        >
+        <div class="flexstart-title-wrapper">
+          <h3>Driving Training Class</h3>
+        </div>
+        <div class="table-container">
+          <table class="schedule-table">
+            <tr>
+              <th>No</th>
+              <th>Course Name</th>
+              <th>Class Date</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>B (Motor Cycles Above 500cc)</td>
+              <td>15-12-2021</td>
+              <td>09:00:00</td>
+              <td>11:00:00</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>B (Motor Cycles Above 500cc)</td>
+              <td>16-12-2021</td>
+              <td>13:30:00</td>
+              <td>15:30:00</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>B (Motor Cycles Above 500cc)</td>
+              <td>17-12-2021</td>
+              <td>10:00:00</td>
+              <td>12:00:00</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
 
