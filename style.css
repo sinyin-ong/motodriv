@@ -2054,6 +2054,18 @@ div[data-dimension] {
   bottom: 0;
   right: 0;
 }
+
+.add-schedule-wrapper {
+  position: relative;
+  width: 420px;
+  height: 600px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .login-tab {
   width: 100%;
   display: flex;
@@ -2085,6 +2097,11 @@ div[data-dimension] {
   align-items: center;
   justify-content: center;
 }
+
+.add-schedule-wrapper .login-input-wrapper {
+  padding: 40px;
+}
+
 .login-input-box {
   display: flex;
   flex-direction: column;
@@ -2100,6 +2117,12 @@ div[data-dimension] {
   width: 100%;
   height: 45px;
   margin: 50px 0px 30px 0px;
+}
+
+.username-wrapper select {
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
 }
 
 .roles-option-button {
@@ -2121,13 +2144,15 @@ div[data-dimension] {
   margin: 15px 0px;
 }
 
-.login-wrapper .field-label {
+.login-wrapper .field-label,
+.add-schedule-wrapper .field-label {
   font-size: 16px;
   margin-bottom: 5px;
   font-family: "Valera", sans-serif;
 }
 
-.login-wrapper input {
+.login-wrapper input,
+.add-schedule-wrapper input {
   width: 100%;
   border-radius: 5px;
   border: none;
@@ -2136,7 +2161,8 @@ div[data-dimension] {
   font-size: 12px;
 }
 
-.login-wrapper .submit-button {
+.login-wrapper .submit-button,
+.add-schedule-wrapper .submit-button {
   background-color: #78adc9;
   width: 120px;
   border: none;
@@ -2344,6 +2370,10 @@ div[data-dimension] {
 .save-button,
 .submit-profile-button {
   background-color: #0070ff;
+}
+
+.add-schedule-button.add-schedule {
+  margin: 30px 0 30px 280px;
 }
 
 .submit-payment-button {
