@@ -2403,7 +2403,8 @@ div[data-dimension] {
   align-items: center;
 }
 .maxwidth-profile-container,
-.maxwidth-tutor-profile-container {
+.maxwidth-tutor-profile-container,
+.maxwidth-license-profile-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2424,6 +2425,10 @@ div[data-dimension] {
   height: 450px;
 }
 
+.maxwidth-license-profile-container {
+  height: 250px;
+}
+
 .profile-container,
 .tutor-profile-container {
   width: 80%;
@@ -2439,6 +2444,11 @@ div[data-dimension] {
 
 .tutor-profile-container {
   height: 80%;
+}
+
+.license-profile-container {
+  width: 100%;
+  height: 100%;
 }
 
 .profile-icon-wrapper {
@@ -2494,14 +2504,19 @@ div[data-dimension] {
 }
 
 .profile-frame,
-.tutor-profile-frame {
+.tutor-profile-frame,
+.license-profile-frame {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  border: 1px solid #caf0f8;
   border-radius: 5px;
+}
+
+.profile-frame,
+.tutor-profile-frame {
+  border: 1px solid #caf0f8;
 }
 
 .profile-frame {
@@ -2512,14 +2527,26 @@ div[data-dimension] {
   height: 70%;
 }
 
-.profile-frame-title {
+.profile-frame-title,
+.license-frame-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.profile-frame-title {
   background-color: #caf0f8;
   height: 35px;
+}
+
+.license-frame-title {
+  color: white;
+  background-color: #023e8a;
+  height: 45px;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 5px;
 }
 
 .profile-table,
@@ -2571,4 +2598,8 @@ div[data-dimension] {
   padding: 3px 20px;
   font-size: 13px;
   font-family: "Valera", sans-serif;
+}
+
+.table-container.attendance {
+  background-color: white;
 }
