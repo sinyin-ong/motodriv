@@ -156,7 +156,6 @@
 
     function populateFieldFromCookie() {
       let user = JSON.parse(getCookie('user'));
-      console.log(user)
       if (user.tutorId) {
         document.getElementById('tutId').innerHTML = user.tutorId;
       }
@@ -169,6 +168,9 @@
       if (user.tutorName) {
         document.getElementById('tutName').value = user.tutorName;
       }
+      if (user.tutorPhoneNum) {
+        document.getElementById('tutTel').value = user.tutorPhoneNum;
+      }
     }
 
     function completeProfile() {
@@ -179,7 +181,7 @@
       let urlencoded = new URLSearchParams();
       urlencoded.append("tutorEmail", document.getElementById('tutEmail').value);
       urlencoded.append("tutorName", document.getElementById('tutName').value);
-
+      urlencoded.append("tutorPhoneNum", document.getElementById('tutTel').value);
 
       let requestOptions = {
         method: 'PATCH',

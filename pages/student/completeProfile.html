@@ -176,7 +176,7 @@
     function populateFieldFromCookie() {
       let user = JSON.parse(getCookie('user'));
       if (user.studentId) {
-        document.getElementById('stdId').value = user.studentId;
+        document.getElementById('stdId').innerHTML = user.studentId;
       }
       if (user.studUsername) {
         document.getElementById('stdUsername').value = user.studUsername;
