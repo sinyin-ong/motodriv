@@ -152,11 +152,8 @@
 
       $.ajax(settings).done(function (response) {
         let students = response.students;
-        console.log(students);
 
         students.forEach(student => {
-          console.log(student);
-
           $('.schedule-table').append(
             `<tr>
             <td>${student.studentId}</td>
@@ -165,7 +162,7 @@
             <td>${student.phoneNum}</td>
             <td>${new Date(student.dateOfEnrol).toLocaleDateString('en-CA')}</td>
             <td>
-              <button class="delete-button" type="button" onclick="Delete()">
+              <button class="delete-button" type="button" onclick="deleteStudent('${student.studUsername}')">
                 Delete
               </button>
             </td>
@@ -178,6 +175,18 @@
         });
       });
     });
+
+    function deleteStudent(studUsername) {
+      var settings = {
+        "url": `https://motodriv-api.herokuapp.com/api/admin/delete-student/${studUsername}`,
+        "method": "DELETE",
+
+      };
+
+      $.ajax(settings).done(function (response) {
+        window.location.reload();
+      });
+    }
   </script>
 
   <!-- Custom js-->
