@@ -2634,6 +2634,7 @@ div[data-dimension] {
   width: 150px;
   padding: 2px 8px;
   border-radius: 5px;
+  border: 1px solid #909090;
 }
 
 .save-button,
