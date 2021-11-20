@@ -2552,3 +2552,12 @@ div[data-dimension] {
 .submit-profile-button {
   margin: 20px 0;
 }
+
+.edit-button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 3px 20px;
+  font-size: 13px;
+  font-family: "Valera", sans-serif;
+}
