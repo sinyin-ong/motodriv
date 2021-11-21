@@ -121,9 +121,20 @@
         </div>
       </div>
       <div class="flexend-button-wrapper add-schedule">
-        <button class="add-schedule-button add-schedule">Add Schedule</button>
+        <button
+          class="add-schedule-button add-schedule"
+          onclick="AddSchedule()"
+        >
+          Add Schedule
+        </button>
       </div>
     </div>
+
+    <script>
+      function AddSchedule() {
+        window.location.href = "/pages/admin/class-schedule.html";
+      }
+    </script>
 
     <!-- initialize jQuery Library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

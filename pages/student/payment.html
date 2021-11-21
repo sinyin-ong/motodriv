@@ -125,13 +125,23 @@
             </div>
           </div>
           <div class="center-button-wrapper">
-            <button class="submit-payment-button" onclick="editProfile();">
+            <button class="submit-payment-button" onclick="pay();">
               Submit Payment
             </button>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      function pay() {
+        Swal.fire({
+          icon: "success",
+          title: "Transaction succesful!",
+          text: "A payment has been made.",
+        });
+      }
+    </script>
     <!-- Javascript Files
     ================================================== -->
 

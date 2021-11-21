@@ -86,12 +86,7 @@
               <img class="profile-icon" src="/img/svg/class-schedule2.svg" />
             </div>
             <div class="tutor-edit-profile-icon-wrapper">
-              <a href="/pages/tutor/editProfile.html">
-                <img
-                  class="edit-profile-icon"
-                  src="/img/jpg-png/editIcon.png"
-                />
-              </a>
+              <img class="edit-profile-icon" src="/img/jpg-png/editIcon.png" />
             </div>
 
             <div class="tutor-profile-frame">
@@ -116,19 +111,34 @@
                 <tr>
                   <td>Class Date</td>
                   <td class="profile-detail">
-                    <input type="date" id="tutEmail" name="tutEmail" value="" />
+                    <input
+                      type="date"
+                      id="tutEmail"
+                      name="tutEmail"
+                      value="2021-11-29"
+                    />
                   </td>
                 </tr>
                 <tr>
                   <td>Start Time</td>
                   <td class="profile-detail">
-                    <input type="time" id="tutName" name="tutName" value="" />
+                    <input
+                      type="time"
+                      id="tutName"
+                      name="tutName"
+                      value="10:00"
+                    />
                   </td>
                 </tr>
                 <tr>
                   <td>End Time</td>
                   <td class="profile-detail">
-                    <input type="time" id="tutTel" name="tutTel" value="" />
+                    <input
+                      type="time"
+                      id="tutTel"
+                      name="tutTel"
+                      value="12:00"
+                    />
                   </td>
                 </tr>
               </table>
@@ -136,13 +146,17 @@
           </div>
         </div>
         <div class="flexend-button-wrapper">
-          <button class="save-button" onclick="editProfile();">
+          <button class="save-button" onclick="editSchedule();">
             Save Changes
           </button>
         </div>
       </div>
     </div>
-
+    <script>
+      function editSchedule() {
+        window.location.href = "/pages/admin/class-schedule.html";
+      }
+    </script>
     <!-- Javascript Files
     ================================================== -->
 

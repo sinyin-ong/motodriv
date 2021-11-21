@@ -198,7 +198,9 @@
         </div>
 
         <div class="flexend-button-wrapper">
-          <button class="add-schedule-button">Save Attendance</button>
+          <button class="add-schedule-button" onclick="Add()">
+            Save Attendance
+          </button>
         </div>
       </div>
     </div>
@@ -221,6 +223,14 @@
               "success"
             );
           }
+        });
+      }
+
+      function Add() {
+        Swal.fire({
+          icon: "success",
+          title: "Saved attendance successfully!",
+          text: "Attendance of selected student has been marked.",
         });
       }
     </script>

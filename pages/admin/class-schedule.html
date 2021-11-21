@@ -238,7 +238,9 @@
           </table>
         </div>
         <div class="flexend-button-wrapper">
-          <button class="add-schedule-button">Add Schedule</button>
+          <button class="add-schedule-button" onclick="AddSchedule()">
+            Add Schedule
+          </button>
         </div>
       </div>
     </div>
@@ -262,6 +264,14 @@
             );
           }
         });
+      }
+
+      function Edit() {
+        window.location.href = "/pages/admin/editSchedule.html";
+      }
+
+      function AddSchedule() {
+        window.location.href = "/pages/admin/addSchedule.html";
       }
     </script>
     <!-- Javascript Files

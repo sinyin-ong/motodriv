@@ -61,6 +61,8 @@
       type="text/css"
     />
 
+    <!-- Sweet Alert-->
+    <link rel="stylesheet" href="sweetalert2.min.css" />
     <!-- <script>
       $(document).ready(function () {
         $("#header").load("/components/homeheader.html");
@@ -69,7 +71,7 @@
   </head>
   <body
     class="cover-photo class-schedule flex flex-col justify-center items-center"
-  ><div id="header"></div>
+  ></body><div id="header"></div>
     <h2 class="page-title">MY CLASS SCHEDULE</h2>
 
     <!-- <div class="selection-wrapper">
@@ -105,7 +107,7 @@
               <td>10:00:00</td>
               <td>12:00:00</td>
               <td>
-                <button class="delete-button" type="button">Delete</button>
+                <button class="delete-button" type="button" onclick="Delete()">Delete</button>
               </td>
             </tr>
             <tr>
@@ -115,10 +117,8 @@
               <td>10:00:00</td>
               <td>12:00:00</td>
               <td>
-                <button class="delete-button" type="button">Delete</button>
+                <button class="delete-button" type="button" onclick="Delete()">Delete</button>
               </td>
-            </tr>
-            
             </tr>
           </table>
         </div>
@@ -143,7 +143,7 @@
               <td>09:00:00</td>
               <td>11:00:00</td>
               <td>
-                <button class="delete-button" type="button">Delete</button>
+                <button class="delete-button" type="button" onclick="Delete()">Delete</button>
               </td>
             </tr>
             <tr>
@@ -153,7 +153,7 @@
               <td>13:30:00</td>
               <td>15:30:00</td>
               <td>
-                <button class="delete-button" type="button">Delete</button>
+                <button class="delete-button" type="button" onclick="Delete()">Delete</button>
               </td>
             </tr>
             <tr>
@@ -163,7 +163,7 @@
               <td>10:00:00</td>
               <td>12:00:00</td>
               <td>
-                <button class="delete-button" type="button">Delete</button>
+                <button class="delete-button" type="button" onclick="Delete()">Delete</button>
               </td>
             </tr>
             
@@ -227,7 +227,7 @@
               <td>08:00:00</td>
               <td>10:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -237,7 +237,7 @@
               <td>12:00:00</td>
               <td>14:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -247,7 +247,7 @@
               <td>14:00:00</td>
               <td>16:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -257,7 +257,7 @@
               <td>08:00:00</td>
               <td>10:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
           </table>
@@ -283,7 +283,7 @@
               <td>09:00:00</td>
               <td>11:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -293,7 +293,7 @@
               <td>13:30:00</td>
               <td>15:30:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -303,7 +303,7 @@
               <td>14:00:00</td>
               <td>16:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
             <tr>
@@ -313,13 +313,44 @@
               <td>10:00:00</td>
               <td>12:00:00</td>
               <td>
-                <button class="add-button" type="button">Add</button>
+                <button class="add-button" type="button" onclick="Add()">Add</button>
               </td>
             </tr>
 
         </div>
       </div>
     </div>
+
+    <script>
+      function Delete() {
+        Swal.fire({
+          title: "Are you sure?",
+          text: "You won't be able to revert this!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, delete it!",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire(
+              "Deleted!",
+              "Selected class schedule has been deleted.",
+              "success"
+            );
+          }
+        });
+      }
+
+      function Add(){
+        Swal.fire({
+          icon: 'success',
+          title: 'New class has been added!',
+          text: 'You enrolled a new class successfully.',
+          
+        })
+      }
+    </script>
 
     <!-- Javascript Files
     ================================================== -->
@@ -359,6 +390,11 @@
 
     <!-- Custom js-->
     <script src="/js/custom.js"></script>
+
+    <!-- Sweet Alert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
     <!--=============================================== 
     Template Design By WpFreeware Team.
     Author URI : http://www.wpfreeware.com/
